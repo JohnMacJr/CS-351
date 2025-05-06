@@ -23,3 +23,9 @@
 |80| 1.86|17.07|43.74| 7.63|
 
 ![Speed-up vs Threads](speedup_graph.png)
+
+**Question:** Notice that there is a maximum speed-up factor, but not necessarily using the most threads.
+- Adding more cores won't guarantee a performance increase. Code that cannot be parallelized has a performance limit even with additional cores. Making more threads requires additional processing by the machine, which can diminish the benefits of adding cores. While additional cores may process more, they can also create a bottleneck.
+
+**Question:** Do you think it’s possible to get “perfect scaling” — meaning that the (1-p) terms is zero?
+- No, perfect scaling would require that 100% of the code is parallelizable, which is impossible because every program has parts that must run serially.

@@ -29,3 +29,12 @@
 
 **Question:** Do you think it’s possible to get “perfect scaling” — meaning that the (1-p) terms is zero?
 - No, perfect scaling would require that 100% of the code is parallelizable, which is impossible because every program has parts that must run serially.
+
+**Question:** For your own timings, compute your expected speed-up for 16 cores.
+
+$$
+\text{speedup} = \frac{1}{1 - 0.999235 + \frac{0.999235}{16}} = 15.82
+$$
+
+**Question:** In reviewing the graph of speed-ups to number of threads, what’s the slope of that line? Does that linear trend continue as we add more threads? What do you think causes the curve to “flatten out” when we use large thread counts?
+- 

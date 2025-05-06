@@ -37,4 +37,9 @@ $$
 $$
 
 **Question:** In reviewing the graph of speed-ups to number of threads, what’s the slope of that line? Does that linear trend continue as we add more threads? What do you think causes the curve to “flatten out” when we use large thread counts?
-- 
+
+$$
+\text{slope} = \frac{\text{speedup}_7 - \text{speedup}_1}{7 - 1} = \frac{4.77 - 1.00}{6} = 0.63
+$$
+
+- From 7 to 16 it stops following the linear trend and aftre 16 it begins to flatten out. This is happening because of Amdahl's Law which prevents the program speedup based on the serial portion. The increased threads also causes more overhead.

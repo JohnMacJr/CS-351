@@ -37,4 +37,4 @@ Question: Are the results what you expected? Speculate as to why it looks like C
 
 No. The task is too lightweight for CUDA. The overhead that comes with CUDA makes it a poor use case for the task. No performance benefits are gained.
 
-![julia.gpu](julia.ppm)
+![julia.gpu](julia.jpg)
